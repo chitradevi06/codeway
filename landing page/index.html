@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>7UP</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="sec">
+        <header> 
+            <a href="#"><img src="logo1.png" class="logo"></a>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">What's New</a></li>
+                <li><a href="#">Newsletter</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </header>
+        <div class="content">
+            <div class="textBox">
+                <h2>Sip Smile Repeat<br><span></span></h2>
+                <p>
+                    7UP, a timeless beverage renowned for its crisp and invigorating taste, has cemented its place as a refreshing icon in the world of soft drinks. With a unique blend of lemon and lime flavors, 7UP tantalizes the taste buds with every effervescent sip, delivering a burst of citrusy goodness. This effervescence not only quenches your thirst but also uplifts your spirits, making it a go-to choice for those seeking a delightful and revitalizing experience. Its clear and bubbly profile serves as a versatile companion – a perfect standalone refreshment or a mixer for creative concoctions. Rooted in a legacy of refreshment, 7UP continues to embody the essence of simple joy, consistently providing a sparkling escape from the ordinary with each delightful gulp.
+                </p>
+                    <a href="#">View all products</a>
+
+            </div>
+            <div class="imgBox"></div>
+            <img src="regularsoda1.png" class="up">
+        </div>
+        <ul class="thumb">
+            <li><img src="regularsoda1.png" onclick="imgSlider('regularsoda1.png');changeBgColor('#00A859')"></li>
+            <li><img src="cherrysoda1.png" onclick="imgSlider('cherrysoda1.png');changeBgColor('#9C0101')"></li>
+            <li><img src="limesoda1.png" onclick="imgSlider('limesoda1.png');changeBgColor('#808080')"></li>
+        </ul>
+        <ul class="sci">
+            <li><a href="#"><img src="facebook.png"</a></li>
+            <li><a href="#"><img src="instagram.png"</a></li>
+            <li><a href="#"><img src="twitter.png"</a></li>
+
+        </ul>
+    </section>
+    <script type="text/javascript">
+        function imgSlider(anything){
+            document.querySelector('.up').src = anything;
+        }
+        function changeBgColor(color){
+            const sec = document.querySelector('.sec');
+            sec.style.background = color;
+        }
+    </script>
+</body>
+</html>
