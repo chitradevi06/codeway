@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">Portfolio</a>
+        <div class="toggle"></div>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#work">Work</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    
+    </header>
+    <section class="banner" id="home">
+        <div class="textbox">
+            <h2>Hello, I am<br><span>Chitra Devi.</span></h2>
+            <h3>I am a Front End Web Developer.</h3>
+            <a href="#" class="btn">About me</a>
+        </div>
+    </section>
+    <section class="about" id="about">
+        <div class="heading">
+            <h2>About Me</h2>
+        </div>
+        <div class="content">
+            <div class="cobx">
+                <h3>I am a Front End Web Developer.</h3>
+                <p>As a passionate front-end developer currently pursuing engineering, I bring a wealth of ideas and knowledge to the ever-evolving world of web development. My journey in engineering has equipped me with a solid foundation in problem-solving, analytical thinking, and a deep understanding of technology. With a keen eye for design and a love for creating seamless user experiences, I am dedicated to translating my innovative ideas into visually appealing and functional interfaces. My commitment to staying abreast of the latest industry trends and technologies ensures that I am always ready to implement cutting-edge solutions.</p>
+
+            </div>
+            <div class="w50">
+                <img src="pro.jpg" class="img">
+            </div>
+        </div>
+    </section>
+    <section class="services" id="services">
+        <div class="heading white">
+            <h2>Our Services</h2>
+           
+        </div>
+        <div class="content">
+            <div class="serviesBx">
+                <img src="icon1.png">
+                <h2>Web Design</h2>
+                <p>Web design is the art of creating visually engaging and intuitive digital interfaces, combining aesthetics with user-centric functionality. It involves a seamless integration of graphic elements, layout, and interactive features to deliver a compelling online experience.</p>
+
+            </div>
+            <div class="serviesBx">
+                <img src="icon2.png">
+                <h2>Web Development</h2>
+                <p>Web development is the process of building and maintaining websites or web applications, encompassing both front-end and back-end aspects. It involves coding, scripting, and database management to ensure the functionality and responsiveness of a digital platform.</p>
+
+            </div>
+                <div class="serviesBx">
+                    <img src="icon3.png">
+                    <h2>Android App</h2>
+                    <p>Android app development involves creating software applications specifically tailored for devices running the Android operating system. Developers use programming languages like Java or Kotlin to design and implement interactive and feature-rich mobile applications for a wide range of purposes.</p>
+                </div>
+                <div class="serviesBx">
+                        <img src="icon4.png">
+                        <h2>Photography</h2>
+                        <p>Photography is the art of capturing moments and telling stories through images, utilizing light, composition, and perspective. It allows individuals to freeze time, evoke emotions, and communicate narratives with a visual language that transcends words.</p>
+                 </div>
+                    <div class="content">
+                        <div class="serviesBx">
+                            <img src="icon5.png">
+                            <h2>Content Writing</h2>
+                            <p>Content writing is the craft of creating compelling and informative text for various mediums, such as websites, blogs, or social media. It involves skillful use of language to engage, inform, and resonate with a target audience, aiming to deliver valuable and relevant information.
+                            </p>
+            
+                        </div>
+                        <div class="content">
+                            <div class="serviesBx">
+                                <img src="icon6.png">
+                                <h2>video Editing</h2>
+                                <p>Video editing is the meticulous process of manipulating and arranging visual elements, sound, and effects to craft a cohesive and compelling narrative. It requires a blend of technical proficiency, creative vision, and storytelling finesse to enhance the visual impact of video content.</p>
+                
+                            </div>
+    
+
+        </div>
+    </section>
+    <div class="copyright">
+        <p>Copyright © 2024. All Right Reserved.</p>
+    </div>
+    <script type="text/javascript">
+        window.addEventListener('scroll',function(){
+            var header = document.querySelector('header');
+            header.classList.toggle('sticky',window.scrollY > 0);
+        });
+    </script>
+</body>
+</html>
